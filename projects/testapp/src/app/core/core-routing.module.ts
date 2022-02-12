@@ -7,7 +7,8 @@ const routes: Routes = [
     path: '',
     component: CoreComponent,
     children: [
-      { path: '**', redirectTo: '' }
+      { path: 'test', loadChildren: () => import('../features/test/test.module').then(m => m.TestModule) },
+      { path: '**', redirectTo: 'test' }
     ],
   }
 ];
