@@ -11,3 +11,15 @@ export enum MaterialColor {
   Accent = 'accent',
   Warn = 'warn',
 }
+
+export enum MaterialBtnAlign {
+  Start = 'start',
+  End = 'end',
+}
+
+export enum ProgrBarMode {
+  Determinate = 'determinate',
+  Indeterminate = 'indeterminate',
+  Buffer = 'buffer',
+  Query = 'query',
+}

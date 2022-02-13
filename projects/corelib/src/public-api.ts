@@ -4,6 +4,7 @@
 
 export * from './lib/corelib.module';
 export * from './lib/models/enums';
+export * from './lib/interfaces/mtToggleBtnGroup';
 
 
 /*
@@ -20,3 +21,12 @@ export * from './lib/controls/mt-input-tel/mt-input-tel.component';
 export * from './lib/controls/mt-input-time/mt-input-time.component';
 export * from './lib/controls/mt-input-url/mt-input-url.component';
 export * from './lib/controls/mt-input-textarea/mt-input-textarea.component';
+export * from './lib/controls/mt-button/mt-button.component';
+export * from './lib/controls/mt-button-raised/mt-button-raised.component';
+export * from './lib/controls/mt-button-stroked/mt-button-stroked.component';
+export * from './lib/controls/mt-button-flat/mt-button-flat.component';
+export * from './lib/controls/mt-button-icon/mt-button-icon.component';
+export * from './lib/controls/mt-button-fab/mt-button-fab.component';
+export * from './lib/controls/mt-button-minifab/mt-button-minifab.component';
+export * from './lib/controls/mt-button-toggle/mt-button-toggle.component';
+export * from './lib/controls/mt-card/mt-card.component';
