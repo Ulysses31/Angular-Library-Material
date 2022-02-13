@@ -1,3 +1,8 @@
+export enum MtYesNoChoice {
+  Yes = 'Yes',
+  No = 'No'
+}
+
 export enum MtInputAppearance {
   Legacy = 'legacy',
   Standard = 'standard',
@@ -15,6 +20,11 @@ export enum MaterialColor {
 export enum MaterialBtnAlign {
   Start = 'start',
   End = 'end',
+}
+
+export enum CheckboxLabelPlace {
+  Before = 'before',
+  After = 'after'
 }
 
 export enum ProgrBarMode {

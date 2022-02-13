@@ -6,8 +6,10 @@ import { MtInputTextComponent } from './controls/mt-input-text/mt-input-text.com
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatDialogContent, MatDialogModule } from '@angular/material/dialog';
 import { MtInputColorComponent } from './controls/mt-input-color/mt-input-color.component';
 import { MtInputDateComponent } from './controls/mt-input-date/mt-input-date.component';
 import { MtInputEmailComponent } from './controls/mt-input-email/mt-input-email.component';
@@ -27,6 +29,8 @@ import { MtButtonFabComponent } from './controls/mt-button-fab/mt-button-fab.com
 import { MtButtonMinifabComponent } from './controls/mt-button-minifab/mt-button-minifab.component';
 import { MtButtonToggleComponent } from './controls/mt-button-toggle/mt-button-toggle.component';
 import { MtCardComponent } from './controls/mt-card/mt-card.component';
+import { MtCheckboxComponent } from './controls/mt-checkbox/mt-checkbox.component';
+import { MtDialogComponent } from './controls/mt-dialog/mt-dialog.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +54,8 @@ import { MtCardComponent } from './controls/mt-card/mt-card.component';
     MtButtonMinifabComponent,
     MtButtonToggleComponent,
     MtCardComponent,
+    MtCheckboxComponent,
+    MtDialogComponent
   ],
   imports: [
     CommonModule,
@@ -59,7 +65,9 @@ import { MtCardComponent } from './controls/mt-card/mt-card.component';
     MatButtonModule,
     MatButtonToggleModule,
     MatCardModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatCheckboxModule,
+    MatDialogModule
   ],
   exports: [
     MtInputTextComponent,
@@ -81,7 +89,9 @@ import { MtCardComponent } from './controls/mt-card/mt-card.component';
     MtButtonFabComponent,
     MtButtonMinifabComponent,
     MtButtonToggleComponent,
-    MtCardComponent
+    MtCardComponent,
+    MtCheckboxComponent,
+    MtDialogComponent
   ],
   providers: [],
 })

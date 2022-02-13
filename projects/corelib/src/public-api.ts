@@ -5,6 +5,8 @@
 export * from './lib/corelib.module';
 export * from './lib/models/enums';
 export * from './lib/interfaces/mtToggleBtnGroup';
+export * from './lib/interfaces/mtDialogActionsContent';
+export * from './lib/interfaces/mtCardActionsContent';
 
 
 /*
@@ -30,3 +32,5 @@ export * from './lib/controls/mt-button-fab/mt-button-fab.component';
 export * from './lib/controls/mt-button-minifab/mt-button-minifab.component';
 export * from './lib/controls/mt-button-toggle/mt-button-toggle.component';
 export * from './lib/controls/mt-card/mt-card.component';
+export * from './lib/controls/mt-checkbox/mt-checkbox.component';
+export * from './lib/controls/mt-dialog/mt-dialog.component';
