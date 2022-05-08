@@ -8,13 +8,13 @@ import { MaterialColor } from '../../models/enums';
       mat-button
       [color]="matColor"
       [disabled]="disabled"
-      (click)="command()"
+      (click)="command"
     >{{label}}</button>
   `,
   styleUrls: ['./mt-button.component.css']
 })
 export class MtButtonComponent implements OnInit {
-  @Input() command?: any;
+  @Input() command?: () => {};
   @Input() label: string = 'Basic';
   @Input() disabled: boolean = false;
   @Input() matColor: MaterialColor = MaterialColor.Basic

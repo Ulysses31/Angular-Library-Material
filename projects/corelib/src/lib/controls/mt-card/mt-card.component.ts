@@ -22,7 +22,10 @@ import { MaterialBtnAlign, ProgrBarMode } from '../../models/enums';
         <p>{{ content }}</p>
       </mat-card-content>
       <mat-card-actions *ngIf="hasButtons" [align]="cardAction.aling">
-        <button *ngFor="let action of cardAction.buttons" mat-button>
+        <button *ngFor="let action of cardAction.buttons"
+          mat-button
+          (click)="action.command()"
+        >
           {{ action.text }}
         </button>
       </mat-card-actions>
@@ -49,9 +52,11 @@ export class MtCardComponent implements OnInit {
     buttons: [
       {
         text: 'LIKE',
+        command: () => console.log('LIKE')
       },
       {
         text: 'SHARE',
+        command: () => console.log('SHARE')
       },
     ],
   };

@@ -9,7 +9,6 @@ import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
-import { MatDialogContent, MatDialogModule } from '@angular/material/dialog';
 import { MtInputColorComponent } from './controls/mt-input-color/mt-input-color.component';
 import { MtInputDateComponent } from './controls/mt-input-date/mt-input-date.component';
 import { MtInputEmailComponent } from './controls/mt-input-email/mt-input-email.component';
@@ -30,7 +29,6 @@ import { MtButtonMinifabComponent } from './controls/mt-button-minifab/mt-button
 import { MtButtonToggleComponent } from './controls/mt-button-toggle/mt-button-toggle.component';
 import { MtCardComponent } from './controls/mt-card/mt-card.component';
 import { MtCheckboxComponent } from './controls/mt-checkbox/mt-checkbox.component';
-import { MtDialogComponent } from './controls/mt-dialog/mt-dialog.component';
 
 @NgModule({
   declarations: [
@@ -54,8 +52,7 @@ import { MtDialogComponent } from './controls/mt-dialog/mt-dialog.component';
     MtButtonMinifabComponent,
     MtButtonToggleComponent,
     MtCardComponent,
-    MtCheckboxComponent,
-    MtDialogComponent
+    MtCheckboxComponent
   ],
   imports: [
     CommonModule,
@@ -66,8 +63,7 @@ import { MtDialogComponent } from './controls/mt-dialog/mt-dialog.component';
     MatButtonToggleModule,
     MatCardModule,
     MatProgressBarModule,
-    MatCheckboxModule,
-    MatDialogModule
+    MatCheckboxModule
   ],
   exports: [
     MtInputTextComponent,
@@ -90,8 +86,7 @@ import { MtDialogComponent } from './controls/mt-dialog/mt-dialog.component';
     MtButtonMinifabComponent,
     MtButtonToggleComponent,
     MtCardComponent,
-    MtCheckboxComponent,
-    MtDialogComponent
+    MtCheckboxComponent
   ],
   providers: [],
 })

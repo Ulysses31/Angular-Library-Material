@@ -1,5 +1,3 @@
-import { MtDialogComponent } from './../../../../../corelib/src/lib/controls/mt-dialog/mt-dialog.component';
-import { MatDialog } from '@angular/material/dialog';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,11 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./test.component.css']
 })
 export class TestComponent implements OnInit {
-
-  constructor(public dialog: MatDialog) { }
-
-  ngOnInit(): void {
-    const dialogRef = this.dialog.open(MtDialogComponent);
+  btns: any = {
+    command: () => this.btnCmd()
   }
 
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+  btnCmd(): any {
+    console.log('Hello World');
+  }
 }
