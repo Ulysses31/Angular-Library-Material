@@ -33,3 +33,13 @@ export enum ProgrBarMode {
   Buffer = 'buffer',
   Query = 'query',
 }
+
+export enum MaterialButtonType {
+  Basic = 'basic',
+  Raised = 'raised',
+  Stroked = 'stroked',
+  Flat = 'flat',
+  Icon = 'icon',
+  FAB = 'FAB',
+  MiniFab = 'Mini FAB'
+}

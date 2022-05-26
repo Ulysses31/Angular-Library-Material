@@ -6,18 +6,21 @@ import { MaterialColor } from '../../models/enums';
   template: `
     <button
       mat-button
-      [color]="matColor"
+      [color]="color"
       [disabled]="disabled"
-      (click)="command"
-    >{{label}}</button>
+      (click)="command()"
+    >
+    <mat-icon>{{ icon }}</mat-icon> {{label}}
+  </button>
   `,
   styleUrls: ['./mt-button.component.css']
 })
 export class MtButtonComponent implements OnInit {
-  @Input() command?: () => {};
+  @Input() command?: any;
   @Input() label: string = 'Basic';
+  @Input() icon: string = '';
   @Input() disabled: boolean = false;
-  @Input() matColor: MaterialColor = MaterialColor.Basic
+  @Input() color: MaterialColor = MaterialColor.Basic
 
   constructor() { }
 

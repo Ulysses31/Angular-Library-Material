@@ -1,16 +1,21 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { MtToggleButtonGroup } from '../../interfaces/mtToggleBtnGroup';
+import { MatButtonToggleAppearance } from '@angular/material/button-toggle';
 
 @Component({
   selector: 'mt-button-toggle',
   template: `
-    <mat-button-toggle-group #group="matButtonToggleGroup">
+    <mat-button-toggle-group
+      #group="matButtonToggleGroup"
+      [multiple]="multiple"
+      [appearance]="appearance"
+    >
       <mat-button-toggle
         *ngFor="let btn of toggleBtns"
-        [aria-label]="$any(btn.ariaLabel)"
         [value]="btn.value"
       >
-        <mat-icon>{{ btn.icon }}</mat-icon>
+        <mat-icon *ngIf="btn.icon">{{ btn.icon }}</mat-icon>
+        {{ btn.label }}
       </mat-button-toggle>
     </mat-button-toggle-group>
     <!-- Selected: {{group.value}} -->
@@ -19,6 +24,8 @@ import { MtToggleButtonGroup } from '../../interfaces/mtToggleBtnGroup';
 })
 export class MtButtonToggleComponent implements OnInit {
   @Input() toggleBtns: MtToggleButtonGroup[] = [];
+  @Input() multiple: boolean = false;
+  @Input() appearance: MatButtonToggleAppearance = 'standard';
 
   constructor() {
     // this.toggleBtns = [

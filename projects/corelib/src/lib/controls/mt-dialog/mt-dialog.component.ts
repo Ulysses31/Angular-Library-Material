@@ -1,4 +1,4 @@
-// import { Component, OnInit, Input } from '@angular/core';
+// import { Component, OnInit, Input, Inject } from '@angular/core';
 // import { MtDialogActionsContent } from '../../interfaces/mtDialogActionsContent';
 // import { MaterialBtnAlign } from '../../models/enums';
 
@@ -10,13 +10,13 @@
 //       {{content}}
 //     </mat-dialog-content>
 //     <mat-dialog-actions align="end">
-//       <button mat-button mat-dialog-close>{{dialogAction.buttons[0].text}}</button>
-//       <button mat-button [mat-dialog-close]="true" cdkFocusInitial>
-//       {{dialogAction.buttons[1].text}}
+//       <button mat-button mat-dialog-close>OK</button>
+//       <button mat-button mat-dialog-close cdkFocusInitial>
+//       CANCEL
 //       </button>
 //     </mat-dialog-actions>
 //   `,
-//   styleUrls: ['./mt-dialog.component.css'],
+//   styleUrls: ['./mt-dialog.component.css']
 // })
 // export class MtDialogComponent implements OnInit {
 //   @Input() title: string = 'Install Angular';
@@ -33,8 +33,24 @@
 //     ],
 //   };
 
-//   constructor() {}
+//   constructor(
+//     //public dialog: MatDialog
+//     //public dialogRef: MatDialogRef<MtDialogComponent>,
+//     // @Inject(MAT_DIALOG_DATA) public data: DialogData,
+//   ) {}
+
 
 //   ngOnInit(): void {
+//   }
+
+//   // openDialog(): void {
+//   //   const dialogRef = this.dialog.open(DialogOverviewExampleDialog, {
+//   //     width: '250px',
+//   //    // data: {name: this.name, animal: this.animal},
+//   //   });
+//   // }
+
+//   onNoClick(): void {
+//     //this.dialogRef.close();
 //   }
 // }

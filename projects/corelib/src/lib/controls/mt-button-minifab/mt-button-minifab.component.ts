@@ -6,7 +6,7 @@ import { MaterialColor } from '../../models/enums';
   template: `
     <button
       mat-mini-fab
-      [color]="matColor"
+      [color]="color"
       [disabled]="disabled"
       (click)="command()"
     >
@@ -19,7 +19,7 @@ export class MtButtonMinifabComponent implements OnInit {
   @Input() command?: any;
   @Input() icon: string = 'home';
   @Input() disabled: boolean = false;
-  @Input() matColor: MaterialColor = MaterialColor.Basic
+  @Input() color: MaterialColor = MaterialColor.Basic
 
   constructor() { }
 

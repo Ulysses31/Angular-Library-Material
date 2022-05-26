@@ -1,6 +1,6 @@
 export interface MtToggleButtonGroup {
   id?: null | string;
-  ariaLabel?: null | string;
+  label: string;
   icon?: null | string;
   value?: null | string;
 }

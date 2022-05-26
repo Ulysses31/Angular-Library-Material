@@ -9,6 +9,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatChipsModule } from '@angular/material/chips';
+import { MatExpansionModule } from '@angular/material/expansion';
 import { MtInputColorComponent } from './controls/mt-input-color/mt-input-color.component';
 import { MtInputDateComponent } from './controls/mt-input-date/mt-input-date.component';
 import { MtInputEmailComponent } from './controls/mt-input-email/mt-input-email.component';
@@ -29,6 +31,8 @@ import { MtButtonMinifabComponent } from './controls/mt-button-minifab/mt-button
 import { MtButtonToggleComponent } from './controls/mt-button-toggle/mt-button-toggle.component';
 import { MtCardComponent } from './controls/mt-card/mt-card.component';
 import { MtCheckboxComponent } from './controls/mt-checkbox/mt-checkbox.component';
+import { MtChipsComponent } from './controls/mt-chips/mt-chips.component';
+import { MtExpansionPanelComponent } from './controls/mt-expansion-panel/mt-expansion-panel.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +56,9 @@ import { MtCheckboxComponent } from './controls/mt-checkbox/mt-checkbox.componen
     MtButtonMinifabComponent,
     MtButtonToggleComponent,
     MtCardComponent,
-    MtCheckboxComponent
+    MtCheckboxComponent,
+    MtChipsComponent,
+    MtExpansionPanelComponent
   ],
   imports: [
     CommonModule,
@@ -63,7 +69,9 @@ import { MtCheckboxComponent } from './controls/mt-checkbox/mt-checkbox.componen
     MatButtonToggleModule,
     MatCardModule,
     MatProgressBarModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatChipsModule,
+    MatExpansionModule
   ],
   exports: [
     MtInputTextComponent,
@@ -86,7 +94,9 @@ import { MtCheckboxComponent } from './controls/mt-checkbox/mt-checkbox.componen
     MtButtonMinifabComponent,
     MtButtonToggleComponent,
     MtCardComponent,
-    MtCheckboxComponent
+    MtCheckboxComponent,
+    MtChipsComponent,
+    MtExpansionPanelComponent
   ],
   providers: [],
 })

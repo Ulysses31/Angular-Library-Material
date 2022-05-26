@@ -8,14 +8,77 @@
 <mt-input-tel></mt-input-tel>
 <mt-input-time></mt-input-time>
 <mt-input-url></mt-input-url>
-<mt-input-textarea></mt-input-textarea>-->
-<mt-button></mt-button>
-<!-- <mt-button-raised></mt-button-raised>
-<mt-button-stroked></mt-button-stroked>
-<mt-button-flat></mt-button-flat>
-<mt-button-icon></mt-button-icon>
-<mt-button-fab></mt-button-fab>
-<mt-button-minifab></mt-button-minifab>
-<mt-button-toggle></mt-button-toggle>
-<mt-card></mt-card>
-<mt-checkbox></mt-checkbox> -->
+<mt-input-textarea></mt-input-textarea>
+<mt-button
+  [disabled]="disabled"
+  [command]="command"
+  [color]="btnColor"
+  [label]="label"
+>
+</mt-button>
+<mt-button-raised
+  [disabled]="disabled"
+  [command]="command"
+  [color]="btnColor"
+  [label]="label"
+></mt-button-raised>
+<mt-button-stroked
+  [disabled]="disabled"
+  [command]="command"
+  [color]="btnColor"
+  [label]="label"
+></mt-button-stroked>
+<mt-button-flat
+  [disabled]="disabled"
+  [command]="command"
+  [color]="btnColor"
+  [label]="label"
+></mt-button-flat>
+<mt-button-icon
+  [disabled]="disabled"
+  [command]="command"
+  [color]="btnColor"
+></mt-button-icon>
+<mt-button-fab
+  [disabled]="disabled"
+  [command]="command"
+  [color]="btnColor"
+></mt-button-fab>
+<mt-button-minifab
+  [disabled]="disabled"
+  [command]="command"
+  [color]="btnColor"
+></mt-button-minifab>
+<mt-button-toggle
+  [toggleBtns]="toggleBtns"
+  [multiple]="selectionType"
+  [appearance]="appearanceType"
+></mt-button-toggle>
+<mt-card
+  [title]="title"
+  [subTitle]="subTitle"
+  [hasButtons]="hasButtons"
+  [hasImage]="hasImage"
+  [hasFooter]="hasFooter"
+  [hasPrgBar]="hasPrgBar"
+  [content]="content"
+  [cardAction]="cardAction"
+></mt-card>
+<mt-checkbox
+  [disabled]="disabled"
+  [labelPosition]="labelPosition"
+  [color]="color"
+  [label]="label"
+  [checked]="checked"
+></mt-checkbox>
+<mt-chips
+  [disabled]="disabled"
+  [label]="label"
+  [placeHolderInput]="placeHolderInput"
+  [chipContent]="chipContent"
+  [chipValue]="chipValue"
+></mt-chips>-->
+<mt-expansion-panel
+  [panels]="panels"
+>
+</mt-expansion-panel>
