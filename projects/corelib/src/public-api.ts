@@ -36,3 +36,8 @@ export * from './lib/controls/mt-checkbox/mt-checkbox.component';
 //export * from './lib/controls/mt-dialog/mt-dialog.component';
 export * from './lib/controls/mt-chips/mt-chips.component';
 export * from './lib/controls/mt-expansion-panel/mt-expansion-panel.component';
+export * from './lib/controls/mt-list/mt-list.component';
+export * from './lib/controls/mt-paginator/mt-paginator.component';
+export * from './lib/controls/mt-progress/mt-progress.component';
+export * from './lib/controls/mt-spinner/mt-spinner.component';
+export * from './lib/controls/mt-radio/mt-radio.component';

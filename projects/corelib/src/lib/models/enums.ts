@@ -34,6 +34,11 @@ export enum ProgrBarMode {
   Query = 'query',
 }
 
+export enum ProgrSpinnerMode {
+  Determinate = 'determinate',
+  Indeterminate = 'indeterminate'
+}
+
 export enum MaterialButtonType {
   Basic = 'basic',
   Raised = 'raised',

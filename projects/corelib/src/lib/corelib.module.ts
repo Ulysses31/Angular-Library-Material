@@ -11,6 +11,10 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatListModule } from '@angular/material/list';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MtInputColorComponent } from './controls/mt-input-color/mt-input-color.component';
 import { MtInputDateComponent } from './controls/mt-input-date/mt-input-date.component';
 import { MtInputEmailComponent } from './controls/mt-input-email/mt-input-email.component';
@@ -33,6 +37,11 @@ import { MtCardComponent } from './controls/mt-card/mt-card.component';
 import { MtCheckboxComponent } from './controls/mt-checkbox/mt-checkbox.component';
 import { MtChipsComponent } from './controls/mt-chips/mt-chips.component';
 import { MtExpansionPanelComponent } from './controls/mt-expansion-panel/mt-expansion-panel.component';
+import { MtListComponent } from './controls/mt-list/mt-list.component';
+import { MtPaginatorComponent } from './controls/mt-paginator/mt-paginator.component';
+import { MtProgressComponent } from './controls/mt-progress/mt-progress.component';
+import { MtSpinnerComponent } from './controls/mt-spinner/mt-spinner.component';
+import { MtRadioComponent } from './controls/mt-radio/mt-radio.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +67,12 @@ import { MtExpansionPanelComponent } from './controls/mt-expansion-panel/mt-expa
     MtCardComponent,
     MtCheckboxComponent,
     MtChipsComponent,
-    MtExpansionPanelComponent
+    MtExpansionPanelComponent,
+    MtListComponent,
+    MtPaginatorComponent,
+    MtProgressComponent,
+    MtSpinnerComponent,
+    MtRadioComponent
   ],
   imports: [
     CommonModule,
@@ -71,7 +85,11 @@ import { MtExpansionPanelComponent } from './controls/mt-expansion-panel/mt-expa
     MatProgressBarModule,
     MatCheckboxModule,
     MatChipsModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatListModule,
+    MatPaginatorModule,
+    MatProgressSpinnerModule,
+    MatRadioModule
   ],
   exports: [
     MtInputTextComponent,
@@ -96,7 +114,12 @@ import { MtExpansionPanelComponent } from './controls/mt-expansion-panel/mt-expa
     MtCardComponent,
     MtCheckboxComponent,
     MtChipsComponent,
-    MtExpansionPanelComponent
+    MtExpansionPanelComponent,
+    MtListComponent,
+    MtPaginatorComponent,
+    MtProgressComponent,
+    MtSpinnerComponent,
+    MtRadioComponent
   ],
   providers: [],
 })
