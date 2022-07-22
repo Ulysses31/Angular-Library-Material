@@ -381,6 +381,10 @@ export class TestComponent implements OnInit {
   //   },
   // ];
 
+  // TOOLBAR
+  title: string = 'Application';
+  color: MaterialColor = MaterialColor.Basic;
+
   constructor(private _snackBar: MatSnackBar) {}
 
   ngOnInit(): void {

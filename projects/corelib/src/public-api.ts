@@ -48,3 +48,4 @@ export * from './lib/controls/mt-slider/mt-slider.component';
 export * from './lib/controls/mt-table/mt-table.component';
 export * from './lib/controls/mt-tree/mt-tree.component';
 export * from './lib/controls/mt-layout/mt-layout.component';
+export * from './lib/controls/mt-toolbar/mt-toolbar.component';
