@@ -23,6 +23,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatTableModule } from '@angular/material/table';
 import { MatTreeModule } from '@angular/material/tree';
 import { CdkTreeModule } from '@angular/cdk/tree';
+import { LayoutModule } from '@angular/cdk/layout';
 import { MtInputColorComponent } from './controls/mt-input-color/mt-input-color.component';
 import { MtInputDateComponent } from './controls/mt-input-date/mt-input-date.component';
 import { MtInputEmailComponent } from './controls/mt-input-email/mt-input-email.component';
@@ -58,6 +59,7 @@ import { MtTableComponent } from './controls/mt-table/mt-table.component';
 import { MatSortModule } from '@angular/material/sort';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MtTreeComponent } from './controls/mt-tree/mt-tree.component';
+import { MtLayoutComponent } from './controls/mt-layout/mt-layout.component';
 
 @NgModule({
   declarations: [
@@ -94,7 +96,8 @@ import { MtTreeComponent } from './controls/mt-tree/mt-tree.component';
     MtSlideComponent,
     MtSliderComponent,
     MtTableComponent,
-    MtTreeComponent
+    MtTreeComponent,
+    MtLayoutComponent
   ],
   imports: [
     CommonModule,
@@ -121,7 +124,8 @@ import { MtTreeComponent } from './controls/mt-tree/mt-tree.component';
     MatSortModule,
     MatTooltipModule,
     MatTreeModule,
-    CdkTreeModule
+    CdkTreeModule,
+    LayoutModule
   ],
   exports: [
     MtInputTextComponent,
@@ -157,7 +161,8 @@ import { MtTreeComponent } from './controls/mt-tree/mt-tree.component';
     MtSlideComponent,
     MtSliderComponent,
     MtTableComponent,
-    MtTreeComponent
+    MtTreeComponent,
+    MtLayoutComponent
   ],
   providers: [],
 })
