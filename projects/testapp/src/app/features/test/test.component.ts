@@ -8,11 +8,20 @@ import { MatDialogActions } from '@angular/material/dialog';
 import { MtCardActionsContent } from './../../../../../corelib/src/lib/interfaces/mtCardActionsContent';
 import { MatFormFieldAppearance } from '@angular/material/form-field';
 import { MtToggleButtonGroup } from './../../../../../corelib/src/lib/interfaces/mtToggleBtnGroup';
-import { MaterialBtnAlign, MaterialButtonType, MaterialColor, ProgrBarMode, ProgrSpinnerMode, SideNavMode, SideNavPosition, SlideLabelPosition } from './../../../../../corelib/src/lib/models/enums';
+import {
+  MaterialBtnAlign,
+  MaterialButtonType,
+  MaterialColor,
+  ProgrBarMode,
+  ProgrSpinnerMode,
+  SideNavMode,
+  SideNavPosition,
+  SlideLabelPosition,
+} from './../../../../../corelib/src/lib/models/enums';
 import { Component, OnInit } from '@angular/core';
 import { MatButtonToggleAppearance } from '@angular/material/button-toggle';
 import { noop } from 'rxjs/internal/util/noop';
-import { MatDialog } from "@angular/material/dialog";
+import { MatDialog } from '@angular/material/dialog';
 import { MtSelectItem } from 'projects/corelib/src/lib/models/mt-select-item';
 import { ThemePalette } from '@angular/material/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
@@ -28,6 +37,7 @@ export class TestComponent implements OnInit {
   // label: string = 'Material Button Flat';
   // command: any = () => this.btnCmd()
   // btnColor: MaterialColor = MaterialColor.Primary;
+  // toolTipMessage: string = 'Hello World tooltip!';
 
   // TOGGLE
   // selectionType: boolean = false;
@@ -309,31 +319,69 @@ export class TestComponent implements OnInit {
   // value: number = 0;
 
   // TABLE
-  hasPagination: boolean = true;
-  isSelectable: boolean = true;
-  displayedColumns: string[] = [
-    '#',
-    'position',
-    'name',
-    'weight',
-    'symbol',
-  ];
-  dataSource: any[] = [
-    { id: 1, position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },
-    { id: 2, position: 2, name: 'Helium', weight: 4.0026, symbol: 'He' },
-    { id: 3, position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li' },
-    { id: 4, position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be' },
-    { id: 5, position: 5, name: 'Boron', weight: 10.811, symbol: 'B' },
-    { id: 6, position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C' },
-    { id: 7, position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N' },
-    { id: 8, position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O' },
-    { id: 9, position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F' },
-    { id: 10, position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne' },
-  ];
-  command: any = () => this.btnCmd()
-  dsCount: number = this.dataSource.length;
+  // hasPagination: boolean = true;
+  // isSelectable: boolean = true;
+  // displayedColumns: string[] = [
+  //   '#',
+  //   'position',
+  //   'name',
+  //   'weight',
+  //   'symbol',
+  // ];
+  // dataSource: any[] = [
+  //   { id: 1, position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },
+  //   { id: 2, position: 2, name: 'Helium', weight: 4.0026, symbol: 'He' },
+  //   { id: 3, position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li' },
+  //   { id: 4, position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be' },
+  //   { id: 5, position: 5, name: 'Boron', weight: 10.811, symbol: 'B' },
+  //   { id: 6, position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C' },
+  //   { id: 7, position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N' },
+  //   { id: 8, position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O' },
+  //   { id: 9, position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F' },
+  //   { id: 10, position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne' },
+  // ];
+  // command: any = () => this.btnCmd()
+  // dsCount: number = this.dataSource.length;
 
-  constructor(private _snackBar: MatSnackBar) { }
+  // TREE
+  // dataSource = [
+  //   {
+  //     name: 'Fruit',
+  //     expandable: true,
+  //     level: 0
+  //   },
+  //   {
+  //     name: 'Apple',
+  //     expandable: false,
+  //     level: 1,
+  //     command: () => console.log('Apple')
+  //   },
+  //   {
+  //     name: 'Banana',
+  //     expandable: false,
+  //     level: 1,
+  //     command: () => console.log('Banana')
+  //   },
+  //   {
+  //     name: 'Vegetables',
+  //     expandable: true,
+  //     level: 0
+  //   },
+  //   {
+  //     name: 'Green',
+  //     expandable: false,
+  //     level: 1,
+  //     command: () => console.log('Green')
+  //   },
+  //   {
+  //     name: 'Broccoli',
+  //     expandable: false,
+  //     level: 1,
+  //     command: () => console.log('Broccoli')
+  //   },
+  // ];
+
+  constructor(private _snackBar: MatSnackBar) {}
 
   ngOnInit(): void {
     // this._snackBar.open('This is a test snackbar!', 'Close');

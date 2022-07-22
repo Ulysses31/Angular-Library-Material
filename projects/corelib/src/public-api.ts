@@ -46,3 +46,4 @@ export * from './lib/controls/mt-sidenav/mt-sidenav.component';
 export * from './lib/controls/mt-slide/mt-slide.component';
 export * from './lib/controls/mt-slider/mt-slider.component';
 export * from './lib/controls/mt-table/mt-table.component';
+export * from './lib/controls/mt-tree/mt-tree.component';
