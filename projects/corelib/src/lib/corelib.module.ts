@@ -15,6 +15,12 @@ import { MatListModule } from '@angular/material/list';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatSelectModule } from '@angular/material/select';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatSliderModule } from '@angular/material/slider';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatTableModule } from '@angular/material/table';
 import { MtInputColorComponent } from './controls/mt-input-color/mt-input-color.component';
 import { MtInputDateComponent } from './controls/mt-input-date/mt-input-date.component';
 import { MtInputEmailComponent } from './controls/mt-input-email/mt-input-email.component';
@@ -42,6 +48,12 @@ import { MtPaginatorComponent } from './controls/mt-paginator/mt-paginator.compo
 import { MtProgressComponent } from './controls/mt-progress/mt-progress.component';
 import { MtSpinnerComponent } from './controls/mt-spinner/mt-spinner.component';
 import { MtRadioComponent } from './controls/mt-radio/mt-radio.component';
+import { MtSelectComponent } from './controls/mt-select/mt-select.component';
+import { MtSidenavComponent } from './controls/mt-sidenav/mt-sidenav.component';
+import { MtSlideComponent } from './controls/mt-slide/mt-slide.component';
+import { MtSliderComponent } from './controls/mt-slider/mt-slider.component';
+import { MtTableComponent } from './controls/mt-table/mt-table.component';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
   declarations: [
@@ -72,7 +84,12 @@ import { MtRadioComponent } from './controls/mt-radio/mt-radio.component';
     MtPaginatorComponent,
     MtProgressComponent,
     MtSpinnerComponent,
-    MtRadioComponent
+    MtRadioComponent,
+    MtSelectComponent,
+    MtSidenavComponent,
+    MtSlideComponent,
+    MtSliderComponent,
+    MtTableComponent
   ],
   imports: [
     CommonModule,
@@ -89,7 +106,14 @@ import { MtRadioComponent } from './controls/mt-radio/mt-radio.component';
     MatListModule,
     MatPaginatorModule,
     MatProgressSpinnerModule,
-    MatRadioModule
+    MatRadioModule,
+    MatSelectModule,
+    MatSidenavModule,
+    MatSlideToggleModule,
+    MatSliderModule,
+    MatSnackBarModule,
+    MatTableModule,
+    MatSortModule
   ],
   exports: [
     MtInputTextComponent,
@@ -119,7 +143,12 @@ import { MtRadioComponent } from './controls/mt-radio/mt-radio.component';
     MtPaginatorComponent,
     MtProgressComponent,
     MtSpinnerComponent,
-    MtRadioComponent
+    MtRadioComponent,
+    MtSelectComponent,
+    MtSidenavComponent,
+    MtSlideComponent,
+    MtSliderComponent,
+    MtTableComponent
   ],
   providers: [],
 })

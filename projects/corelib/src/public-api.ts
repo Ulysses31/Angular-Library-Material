@@ -41,3 +41,8 @@ export * from './lib/controls/mt-paginator/mt-paginator.component';
 export * from './lib/controls/mt-progress/mt-progress.component';
 export * from './lib/controls/mt-spinner/mt-spinner.component';
 export * from './lib/controls/mt-radio/mt-radio.component';
+export * from './lib/controls/mt-select/mt-select.component';
+export * from './lib/controls/mt-sidenav/mt-sidenav.component';
+export * from './lib/controls/mt-slide/mt-slide.component';
+export * from './lib/controls/mt-slider/mt-slider.component';
+export * from './lib/controls/mt-table/mt-table.component';

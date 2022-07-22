@@ -8,11 +8,15 @@ import { MatDialogActions } from '@angular/material/dialog';
 import { MtCardActionsContent } from './../../../../../corelib/src/lib/interfaces/mtCardActionsContent';
 import { MatFormFieldAppearance } from '@angular/material/form-field';
 import { MtToggleButtonGroup } from './../../../../../corelib/src/lib/interfaces/mtToggleBtnGroup';
-import { MaterialBtnAlign, MaterialButtonType, MaterialColor, ProgrBarMode, ProgrSpinnerMode } from './../../../../../corelib/src/lib/models/enums';
+import { MaterialBtnAlign, MaterialButtonType, MaterialColor, ProgrBarMode, ProgrSpinnerMode, SideNavMode, SideNavPosition, SlideLabelPosition } from './../../../../../corelib/src/lib/models/enums';
 import { Component, OnInit } from '@angular/core';
 import { MatButtonToggleAppearance } from '@angular/material/button-toggle';
 import { noop } from 'rxjs/internal/util/noop';
 import { MatDialog } from "@angular/material/dialog";
+import { MtSelectItem } from 'projects/corelib/src/lib/models/mt-select-item';
+import { ThemePalette } from '@angular/material/core';
+import { MatSnackBar } from '@angular/material/snack-bar';
+
 @Component({
   selector: 'app-test',
   templateUrl: './test.component.html',
@@ -231,28 +235,108 @@ export class TestComponent implements OnInit {
   // strokeWidth: number = 4;
 
   // RADIO
-  disabled: boolean = false;
-  radioItems: MtRadioItem[] = [
-    {
-      id: '1',
-      label: 'Radio 1',
-      value: '1'
-    },
-    {
-      id: '2',
-      label: 'Radio 2',
-      value: '2'
-    },
-    {
-      id: '3',
-      label: 'Radio 3',
-      value: '3'
-    }
-  ];
+  // disabled: boolean = false;
+  // radioItems: MtRadioItem[] = [
+  //   {
+  //     id: '1',
+  //     label: 'Radio 1',
+  //     value: '1'
+  //   },
+  //   {
+  //     id: '2',
+  //     label: 'Radio 2',
+  //     value: '2'
+  //   },
+  //   {
+  //     id: '3',
+  //     label: 'Radio 3',
+  //     value: '3'
+  //   }
+  // ];
 
-  constructor() { }
+  // SELECT
+  // disabled: boolean = false;
+  // isMultipleSelection: boolean = true;
+  // label: string = 'Favourite food';
+  // placeholder: string = 'Select an option';
+  // selectItems: MtSelectItem[] = [
+  //   {
+  //     id: '1',
+  //     label: 'Extra cheese',
+  //     value: 'extra cheese',
+  //     disabled: false
+  //   },
+  //   {
+  //     id: '2',
+  //     label: 'Mushroom',
+  //     value: 'mushroom',
+  //     disabled: false
+  //   },
+  //   {
+  //     id: '3',
+  //     label: 'Onion',
+  //     value: 'onion',
+  //     disabled: false
+  //   },
+  //   {
+  //     id: '4',
+  //     label: 'Disabled',
+  //     value: 'disabled',
+  //     disabled: true
+  //   },
+  // ];
+
+  // SIDENAV
+  // mode: SideNavMode = SideNavMode.Push;
+  // hasBackdrop: boolean = true;
+  // opened: boolean = true;
+  // position: SideNavPosition = SideNavPosition.Start;
+
+  // SLIDE
+  // disabled: boolean = false;
+  // color: ThemePalette = MaterialColor.Primary;
+  // checked: boolean = false;
+  // label: string = 'Slide me now!';
+  // labelPosition: SlideLabelPOsition = SlideLabelPOsition.After;
+
+  // SLIDER
+  // disabled: boolean = false;
+  // color: ThemePalette = MaterialColor.Primary;
+  // isVertical: boolean = false;
+  // min: number = 0;
+  // max: number = 100;
+  // step: number = 1;
+  // value: number = 0;
+
+  // TABLE
+  hasPagination: boolean = true;
+  isSelectable: boolean = true;
+  displayedColumns: string[] = [
+    '#',
+    'position',
+    'name',
+    'weight',
+    'symbol',
+  ];
+  dataSource: any[] = [
+    { id: 1, position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },
+    { id: 2, position: 2, name: 'Helium', weight: 4.0026, symbol: 'He' },
+    { id: 3, position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li' },
+    { id: 4, position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be' },
+    { id: 5, position: 5, name: 'Boron', weight: 10.811, symbol: 'B' },
+    { id: 6, position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C' },
+    { id: 7, position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N' },
+    { id: 8, position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O' },
+    { id: 9, position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F' },
+    { id: 10, position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne' },
+  ];
+  command: any = () => this.btnCmd()
+  dsCount: number = this.dataSource.length;
+
+  constructor(private _snackBar: MatSnackBar) { }
 
   ngOnInit(): void {
+    // this._snackBar.open('This is a test snackbar!', 'Close');
   }
 
   btnCmd(): void {

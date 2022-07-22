@@ -10,7 +10,7 @@ import { MaterialColor } from '../../models/enums';
       [disabled]="disabled"
       (click)="command()"
     >
-    <mat-icon>{{ icon }}</mat-icon> {{label}}
+    <mat-icon *ngIf="icon">{{ icon }}</mat-icon> {{label}}
   </button>
   `,
   styleUrls: ['./mt-button.component.css']

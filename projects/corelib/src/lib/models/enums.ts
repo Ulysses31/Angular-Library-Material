@@ -1,6 +1,6 @@
 export enum MtYesNoChoice {
   Yes = 'Yes',
-  No = 'No'
+  No = 'No',
 }
 
 export enum MtInputAppearance {
@@ -24,7 +24,7 @@ export enum MaterialBtnAlign {
 
 export enum CheckboxLabelPlace {
   Before = 'before',
-  After = 'after'
+  After = 'after',
 }
 
 export enum ProgrBarMode {
@@ -36,7 +36,7 @@ export enum ProgrBarMode {
 
 export enum ProgrSpinnerMode {
   Determinate = 'determinate',
-  Indeterminate = 'indeterminate'
+  Indeterminate = 'indeterminate',
 }
 
 export enum MaterialButtonType {
@@ -46,5 +46,21 @@ export enum MaterialButtonType {
   Flat = 'flat',
   Icon = 'icon',
   FAB = 'FAB',
-  MiniFab = 'Mini FAB'
+  MiniFab = 'Mini FAB',
+}
+
+export enum SideNavMode {
+  Over = 'over',
+  Push = 'push',
+  Side = 'side',
+}
+
+export enum SideNavPosition {
+  Start = 'start',
+  End = 'end'
+}
+
+export enum SlideLabelPosition {
+  Before = 'before',
+  After = 'after'
 }
